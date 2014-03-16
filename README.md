@@ -34,6 +34,8 @@ sudo apt-get install python-dev python-gevent python-vte python-appindicator
 sudo apt-get install expect
 ```
 
+配置登录信息。修改 `extend` 目录下的 `info.ini` 文件，按照文件中的提示配置你登陆的用户名和密码，还有当前用户的密码。
+
 ##2. Mac
 
 待完成 ...
