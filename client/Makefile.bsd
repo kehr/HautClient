@@ -1,0 +1,25 @@
+CC = gcc
+LIBS = ../libpcap-1.0.0/libpcap.a -liconv
+CFLAGS = -Wall -g -O2
+INC_DIR=/usr/local/include
+LINK_DIR=/usr/local/lib
+
+OBJ  = md5.o zlevoclient.o 
+.PHONY: all
+
+all: zlevoclient hautclient
+
+zlevoclient: $(OBJ)
+	$(CC) $(CFLAGS) -o $@ $(OBJ) $(LIBS) -I$(INC_DIR) -L$(LINK_DIR)
+
+hautclient: $(OBJ)
+	$(CC) $(CFLAGS) -o $@ $(OBJ) $(LIBS) -I$(INC_DIR) -L$(LINK_DIR)
+
+md5.o	: md5.c md5.h
+	$(CC) $(CFLAGS) -c $< -I$(INC_DIR)
+
+zlevoclient.o : zlevoclient.c
+	$(CC) $(CFLAGS) -c $< -I$(INC_DIR)
+	
+clean :
+	rm -v $(OBJ) zlevoclient
