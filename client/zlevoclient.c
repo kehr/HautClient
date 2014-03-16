@@ -16,7 +16,7 @@
 /*************************************************************************
  * @File Name:    zlevoclient.c
  * @Author:       kehr
- * @Mail:         kehr163@163.com
+ * @Mail:         kehr.china@gmail.com
  * @Created Time: 2013年12月23日 
  * @Copyright:    GPL 2.0 applies
  * @Update:       增加函数get_net_state检测网线是否插入
@@ -66,7 +66,7 @@ int bsd_get_mac(const char ifname[], uint8_t eth_addr[]);
 #endif
 
 /* ZlevoClient Version */
-#define LENOVO_VER "1.0"
+#define LENOVO_VER "1.1"
 
 /* default snap length (maximum bytes per packet to capture) */
 #define SNAP_LEN 1518
@@ -74,7 +74,6 @@ int bsd_get_mac(const char ifname[], uint8_t eth_addr[]);
 /* ethernet headers are always exactly 14 bytes [1] */
 #define SIZE_ETHERNET 14
 
-//#define LOCKFILE "/home/kehr/Desktop/zlevoclient.pid"
 #define LOCKFILE "/var/run/zlevoclient.pid"
 
 
@@ -282,7 +281,7 @@ print_server_info (const u_char *str)
 show_usage()
 {
 	printf( "\n"
-			"ZlevoClient %s \n"
+			"HautClient %s \n"
 			"\t  -- Supllicant for Lenovo 802.1x Authentication.\n"
 			"\n"
 			"  Usage:\n"
@@ -300,15 +299,18 @@ show_usage()
 			"\t--debug               Show debug message.\n\n"
 			"\t-h, --help            Show this help.\n\n"
 			"\n"
-			"  About ZlevoClient:\n\n"
+			"  About HautClient:\n\n"
 			"\tThis program is a supplicat program compatible for LENOVO ,\n"
 			"\t802.1x EAPOL protocol, which was used for  Internet control.\n"
 
-			"\tZlevoClient is a software developed individually, with NO any rela-\n"
+			"\tHautClient's origin name is zlevoclient,in order to make this program look like a native thing, i changed it to hautclient'.\n"
+			"\tHautClient is a software developed individually, with NO any rela-\n"
 			"\tiontship with Lenovo company.\n\n\n"
 
 			"\tAnother PT work. Blog: http://apt-blog.co.cc\n"
-			"\t\t\t\t\t\t\t\t2009.05.24\n",
+            "\t\t\t\t\t\t\t\t2009.05.24\n"
+			"\tchanged by kehr. Blog: http://ikehr.com\n"
+			"\t\t\t\t\t\t\t\t2013.12.23\n",
 		LENOVO_VER);
 }
 
@@ -593,7 +595,7 @@ void init_info()
 {
 	if(username == NULL || password == NULL){
 		fprintf (stderr,"@Error: NO Username or Password promoted.\n"
-				"@SUGGESTION: Try zlevoclient --help for usage.\n");
+				"@SUGGESTION: Try hautclient --help for usage.\n");
 		exit(EXIT_FAILURE);
 	}
 	username_length = strlen(username);
@@ -904,7 +906,7 @@ int main(int argc, char **argv)
 		//当alarm超时达到时触发
 		signal (SIGALRM, keep_alive);
 
-		printf("######## Lenovo Client ver. %s #########\n", LENOVO_VER);
+		printf("####### Haut Client version %s ########\n", LENOVO_VER);
 		printf("Device:     %s\n", dev_if_name);
 		printf("MAC:        %02x:%02x:%02x:%02x:%02x:%02x\n",
 				local_mac[0],local_mac[1],local_mac[2],
