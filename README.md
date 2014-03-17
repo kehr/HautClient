@@ -1,3 +1,5 @@
+![HautClient认证效果](./view.png)
+
 #介绍
 -----
 
