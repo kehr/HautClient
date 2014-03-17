@@ -30,6 +30,12 @@ sudo apt-get install python-dev python-gevent python-vte python-appindicator
 
 ```
 
+配置libpcap编译环境
+
+```bash
+sudo apt-get install flex bison
+```
+
 安装 expect, 使用这个'工具'实现免密码登陆。
 
 ```bash
@@ -40,7 +46,7 @@ sudo apt-get install expect
 
 ##2. Mac
 
-待完成 ...
+正在测试 ...
 
 #安装
 ----
