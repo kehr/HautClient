@@ -337,7 +337,7 @@ Copyright (C) 2006 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/kehr/Desktop/Project_/HautClient/depend/libpcap-1.0.0'
+ac_pwd='/home/kehr/Github/HautClient/libpcap-1.0.0'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 # If no file are specified by the user, then we need to provide default
@@ -530,17 +530,17 @@ s,@LIBS@,|#_!!_#|,g
 s,@build_alias@,|#_!!_#|,g
 s,@host_alias@,|#_!!_#|,g
 s,@target_alias@,|#_!!_#|,g
-s,@build@,|#_!!_#|i686-pc-linux-gnu,g
-s,@build_cpu@,|#_!!_#|i686,g
-s,@build_vendor@,|#_!!_#|pc,g
+s,@build@,|#_!!_#|x86_64-unknown-linux-gnu,g
+s,@build_cpu@,|#_!!_#|x86_64,g
+s,@build_vendor@,|#_!!_#|unknown,g
 s,@build_os@,|#_!!_#|linux-gnu,g
-s,@host@,|#_!!_#|i686-pc-linux-gnu,g
-s,@host_cpu@,|#_!!_#|i686,g
-s,@host_vendor@,|#_!!_#|pc,g
+s,@host@,|#_!!_#|x86_64-unknown-linux-gnu,g
+s,@host_cpu@,|#_!!_#|x86_64,g
+s,@host_vendor@,|#_!!_#|unknown,g
 s,@host_os@,|#_!!_#|linux-gnu,g
-s,@target@,|#_!!_#|i686-pc-linux-gnu,g
-s,@target_cpu@,|#_!!_#|i686,g
-s,@target_vendor@,|#_!!_#|pc,g
+s,@target@,|#_!!_#|x86_64-unknown-linux-gnu,g
+s,@target_cpu@,|#_!!_#|x86_64,g
+s,@target_vendor@,|#_!!_#|unknown,g
 s,@target_os@,|#_!!_#|linux-gnu,g
 s,@SHLICC2@,|#_!!_#|,g
 s,@CC@,|#_!!_#|gcc,g
@@ -835,7 +835,6 @@ s,^\([	 #]*\)[^	 ]*\([	 ]*PACKAGE_STRING\)[	 (].*,\1define\2 "" ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*PACKAGE_BUGREPORT\)[	 (].*,\1define\2 "" ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*inline\)[	 (].*,\1define\2 inline ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*HAVE___ATTRIBUTE__\)[	 (].*,\1define\2 1 ,
-s,^\([	 #]*\)[^	 ]*\([	 ]*_FILE_OFFSET_BITS\)[	 (].*,\1define\2 64 ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*HAVE_FSEEKO\)[	 (].*,\1define\2 1 ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*STDC_HEADERS\)[	 (].*,\1define\2 1 ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*HAVE_SYS_TYPES_H\)[	 (].*,\1define\2 1 ,

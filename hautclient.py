@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # coding:utf-8
-# Author: kehr
-# Email:kehr.china@gmail.com
+# Contributor:
+#      Phus Lu        <phus.lu@gmail.com>
+#      kehr           <kehr.china@gmail.com>
 __version__ = '0.1'
 
 

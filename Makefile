@@ -19,11 +19,10 @@ define rmfile
 endef
 
 all:
-	@for subdir in $(SUBDIRS); \
-	do \
-		echo "\n******** making in $$subdir\n"; \
-		( cd $$subdir && chmod 755 * && $(MAKE) -C . ); \
-	done
+	@echo "\n******** making in libpcap-1.0.0\n"; 
+	@(cd libpcap-1.0.0 && ./configure  && chmod 755 * && $(MAKE) -C . )
+	@echo "\n******** making in client\n"; 
+	@(cd client && chmod 755 * && $(MAKE) -C . )
 	@echo  "\nFinished ! " 
 
 clean:
