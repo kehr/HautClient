@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # coding:utf-8
-# Contributor:
-#      Phus Lu        <phus.lu@gmail.com>
-#      kehr           <kehr.china@gmail.com>
+# Author: kehr
+# Email:kehr.china@gmail.com
 __version__ = '0.1'
 
 
@@ -292,9 +291,9 @@ class HautClient:
         menu = gtk.Menu()
         itemlist = [(u'\u767b\u5f55\u4fe1\u606f', self.on_show),
                     (u'\u9690\u85cf\u4fe1\u606f', self.on_hide),
-                    (u'   \u767b\u9646', self.on_reload),
-                    (u'   \u505c\u6b62', self.on_stop),
-                    (u'   \u9000\u51fa', self.on_quit)]
+                    (u'\u767b\u9646', self.on_reload),
+                    (u'\u505c\u6b62', self.on_stop),
+                    (u'\u9000\u51fa', self.on_quit)]
         for text, callback in itemlist:
             item = gtk.MenuItem(text)
             item.connect('activate', callback)
@@ -366,6 +365,7 @@ class HautClient:
         return True
 
     def on_quit(self, widget, data=None):
+       # self.on_stop(widget,data)
     	self.childpid = self.terminal.fork_command(self.command_exit[0], self.command_exit, os.getcwd())
         gtk.main_quit()
 
