@@ -140,7 +140,7 @@ IP:         0.0.0.0
 
 #感谢
 
-感谢 [zlevoclient][1] 和 [GpAgent][2] 的作者提供了优秀的开源代码以供参考。
+感谢 [zlevoclient][1] 和 [GoAgent][2] 的作者提供了优秀的开源代码以供参考。
 
 
 [1]: https://code.google.com/p/zlevoclient
