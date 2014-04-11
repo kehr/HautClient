@@ -21,6 +21,8 @@ endef
 all:
 	@echo "\n******** making in libpcap-1.0.0\n"; 
 	@(cd libpcap-1.0.0 && ./configure  && chmod 755 * && $(MAKE) -C . )
+	@(echo "\n\n You must have root permission to install libpcap in your system! \n")
+	-@(sudo make install)
 	@echo "\n******** making in client\n"; 
 	@(cd client && chmod 755 * && $(MAKE) -C . )
 	@echo  "\nFinished ! " 

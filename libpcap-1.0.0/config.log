@@ -484,7 +484,7 @@ configure:5172: $? = 0
 configure:5190: result: yes
 configure:5110: checking for strlcpy
 configure:5166: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/cctzWA3e.o: In function `main':
+/tmp/cchHZyf2.o: In function `main':
 /home/kehr/Github/HautClient/libpcap-1.0.0/conftest.c:59: undefined reference to `strlcpy'
 collect2: ld returned 1 exit status
 configure:5172: $? = 1
