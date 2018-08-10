@@ -1,7 +1,6 @@
 ![HautClient认证效果](./view.png)
 
-#介绍
------
+# 介绍
 
 HautClient，这个项目是我在课余时间编写的 **河南工业大学** 校园网认证客户端的 **Linux** GUI 版本。    
 
@@ -19,10 +18,9 @@ HautClient，这个项目是我在课余时间编写的 **河南工业大学** �
 
 在这个项目中我主要做的事情是让UI和后台的认证进行交互，解决权限问题。
 
-#配置
------
+# 配置
 
-##说明
+## 说明
 
 > 学弟学妹们可能初次使用ubuntu，许多配置还不熟悉，这里就我遇到的一些情况予以说明。  
 1. 下面将要介绍到的配置都需要在联网状态下进行，确保你的无线网络可以使用。   
@@ -39,7 +37,7 @@ HautClient，这个项目是我在课余时间编写的 **河南工业大学** �
 
 >
 
-##Ubuntu 
+## Ubuntu 
 
 1.配置 python 环境，和 UI 库。如果你已经配置过 GoAgent 则可跳过此步骤  
 
@@ -62,7 +60,7 @@ sudo apt-get install expect
 
 **4.配置登录信息。修改 `extend` 目录下的 `info.ini` 文件，按照文件中的提示配置你登陆的用户名和密码，还有当前用户的密码。**
 
-##Mac
+## Mac
 
 *正在测试 ...*
 
@@ -70,8 +68,7 @@ sudo apt-get install expect
 mac 用户可以参考：http://code.google.com/p/zlevoclient/wiki/DeveloperDocument 进行配置。这是PT的命令行版本，可以使用。
 
 
-#安装
-----
+# 安装
 
 在你需要保存 HautClient 的位置，打开终端，输入一下命令：
 
@@ -101,7 +98,7 @@ python hautclient.py
 python auto-start.py
 ```
 
-#卸载
+# 卸载
 
 在`Hautclient`所在目录打开终端，输入：
 
@@ -110,7 +107,7 @@ sudo make uninstall
 ```
 
 
-#测试
+# 测试
 
 安装和配置的过程可能还有问题，希望你能够参与测试。你可以把测试结果以issue的形式提交，或者给我发邮件：<kehr.china@gmail.com>，我会及时给予回复。
 
@@ -139,7 +136,7 @@ IP:         0.0.0.0
 
 ```
 
-#感谢
+# 感谢
 
 感谢 [zlevoclient][1] 和 [GoAgent][2] 的作者提供了优秀的开源代码以供参考。
 
